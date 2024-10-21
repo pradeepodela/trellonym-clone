@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2>Stored Data</h2>
+    <ul class="list-group">
+        {% for entry in entries %}
+            <li class="list-group-item">{{ entry }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

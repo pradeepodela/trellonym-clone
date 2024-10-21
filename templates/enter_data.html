@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2>Enter Data</h2>
+    <form method="POST" action="{{ url_for('enter_data') }}">
+        <div class="form-group">
+            <label for="name">Enter your name:</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+{% endblock %}

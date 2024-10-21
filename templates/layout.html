@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoho Catalyst Data App</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<style>
+    body {
+    background-color: #f8f9fa;
+}
+
+h2 {
+    color: #343a40;
+}
+
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{{ url_for('index') }}">Data App</a>
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="{{ url_for('enter_data') }}">Enter Data</a>
+            <a class="nav-item nav-link" href="{{ url_for('display_data') }}">Display Data</a>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

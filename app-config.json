@@ -1,0 +1,8 @@
+{
+	"command": "python3 app.py",
+	"build_path": "/Users/prad-zstch1462/Documents/catalyst",
+	"stack": "python_3_9",
+	"env_variables": {},
+	"memory": 256,
+	"scripts": {}
+}
